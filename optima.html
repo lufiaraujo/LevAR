@@ -1,0 +1,32 @@
+<!doctype HTML>
+<html>
+	<head>
+		<script src="assets/scripts/aframe.min.js"></script>
+		<script src="assets/scripts/aframe-ar.min.js"></script>
+		<script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+		<script src="assets/scripts/events.js"></script>
+		<title>LevAR | Optima</title>
+	</head>
+	<body style='margin: 0px; overflow: hidden;'>
+    	<a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
+      
+			<a-assets>
+			    <a-asset-item id="ponto" src="assets/models/ponto.glb"></a-asset-item>
+			</a-assets>
+	  
+			<a-marker markerhandler emitevents="true" cursor="rayOrigin: mouse" id="lev-marker" preset="custom" type="pattern" url="assets/markers/pattern-levar.patt">
+				<a-entity light="type: hemisphere; color: #fefddd; groundColor: #fefddd; intensity: 1.2" rotation="90 0 0"></a-entity>
+				<a-entity id="animated-model" position ="0 0.5 0">
+						<a-entity
+					    gltf-model="#ponto"
+						rotation="180 0 180"
+						position="0.80 -0.25 -0.10"
+			            scale="0.4 0.4 0.4">
+					</a-entity> 
+			    </a-entity>
+			</a-marker>
+
+	    	<a-entity camera></a-entity>
+    	</a-scene>
+	</body>
+</html>

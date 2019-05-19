@@ -1,0 +1,28 @@
+body {
+    background: #f3dc33;
+    font-family: 'Frutiger';
+}
+
+h1 {
+    font-family: 'Frutiger Bold';
+}
+
+.bg-custom {
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'Frutiger';
+    font-style: normal;
+    font-weight: normal;
+    src: url('assets/font/Frutiger.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Frutiger Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('assets/font/Frutiger_bold.woff') format('woff');
+    }
+
