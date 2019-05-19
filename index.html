@@ -3,38 +3,59 @@
   <head>
     <!--Required meta tags-->
     <meta charset="utf-8">
-    <!--Google Font-->
-
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Custom CSS-->
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>LEV | AR</title>
   </head>
+
   <body>
-    <nav id="mainNavBar" class="navbar navbar-expand navbar-dark bg-custom">
-      <div class="container" id="navbarSupportedContent">
-        <a class="navbar-brand" href="#">LevAR</a>
-        <ul class="navbar-nav mr-auto">
+    <nav class="navbar navbar-expand navbar-dark bg-custom fixed-top" id="mainNavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="assets/images/lev-icon.png" alt="icone-lev" width=45% height=45%></a>
+        <ul class="navbar-nav mx-auto nav-fill w-100">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Início</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Tutorial</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#">Sobre</a>
-            </li>
+            <a class="nav-link" href="#">Sobre</a>
+          </li>
         </ul>
       </div>
     </nav>
 
-    <div class="container">
-        <h1><span>LEV</span>, o e-reader da Saraiva</h1>
-    </div>
-
-    <section id="#inicio">
+    <section class="container px-0 mt-5" id="#inicio">
+      <img src="assets/images/assinatura.png" class="img-fluid pr-5 mb-5" alt="LevAR Banner">
       
+      <div class="row align-items-center">
+        <div class="col-12 text-center mb-5">
+            <h2>Selecione o modelo que deseja visualizar:</h2>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center px-0 mb-5">
+          <div class="card bg-custom" style="width: auto;">
+            <img class="card-img-top" src="assets/images/card-relogio.png" alt="Thumb relógio de rua">
+            <div class="card-body">
+              <p class="card-text">Relógio de rua - JCDecaux</p>
+              <a href="jcdecaux.html" class="btn btn-lg btn-outline-primary btn-block">Ver em AR</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center px-0 mb-5">
+            <div class="card" style="width: auto;">
+                <img class="card-img-top" src="assets/images/card-ponto.png" alt="Thumb ponto de ônibus">
+                <div class="card-body">
+                  <p class="card-text">Ponto de ônibus - Otima</p>
+                  <a href="otima.html" class="btn btn-lg btn-outline-primary btn-block">Ver em AR</a>
+                </div>
+              </div>
+        </div>
+      </div>
     </section>
 
     <section id="#tutorial">

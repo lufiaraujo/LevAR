@@ -1,14 +1,36 @@
 body {
     background: #f3dc33;
     font-family: 'Frutiger';
+    font-size: 1.5rem;
+    padding-top: 71px;
+}
+
+nav {
+    background-color: black;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link {
+    color: #3dbaa9;
 }
 
 h1 {
     font-family: 'Frutiger Bold';
 }
 
-.bg-custom {
-    background-color: black;
+.btn-outline-primary {
+    color: #3dbaa9;
+    border-color: #3dbaa9;
+}
+
+.btn-outline-primary:hover {
+    background-color: #3dbaa9;
+    border-color: #3dbaa9;
 }
 
 @font-face {
@@ -17,9 +39,8 @@ h1 {
     font-weight: normal;
     src: url('assets/font/Frutiger.woff') format('woff');
     }
-    
-    
-    @font-face {
+     
+@font-face {
     font-family: 'Frutiger Bold';
     font-style: normal;
     font-weight: normal;
