@@ -1,14 +1,21 @@
 body {
     background: #f3dc33;
+    color: black;
     font-family: 'Frutiger';
-    font-size: 1.5rem;
-    padding-top: 71px;
+    padding-top: 4rem;
 }
 
-nav {
-    background-color: black;
-    font-size: 2rem;
-    margin-bottom: 10px;
+h4, h5, p span, nav {
+    font-family: "Frutiger Bold";
+}
+
+nav, .nome {
+    font-size: 1.2rem;
+}
+
+.navbar-brand {
+    padding-left: 3rem;
+    margin-left: 3rem;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -19,18 +26,22 @@ nav {
     color: #3dbaa9;
 }
 
-h1 {
-    font-family: 'Frutiger Bold';
+.bg-black {
+    background-color: black;
 }
 
-.btn-outline-primary {
-    color: #3dbaa9;
-    border-color: #3dbaa9;
+a.anchor {
+    display: block;
+    position: relative;
+    top: -8rem;
 }
 
-.btn-outline-primary:hover {
-    background-color: #3dbaa9;
-    border-color: #3dbaa9;
+.card-img-top {
+    max-width: 512px;
+}
+
+#marker {
+    max-height: 512px;
 }
 
 @font-face {
@@ -47,3 +58,27 @@ h1 {
     src: url('assets/font/Frutiger_bold.woff') format('woff');
     }
 
+@media (max-width: 991px) {
+
+    .navbar-brand {
+        padding-left: 2rem;
+        margin-left: 0rem;
+    }
+
+    .card-body {
+        font-size: 0.9rem;
+    }
+
+    .nome {
+        font-size: 1rem;
+    }
+
+    #brandLogo {
+        width: 25px;
+    }
+
+@media (max-width: 575px) {
+
+    .navbar-brand {
+        padding-left: 0rem;
+    }

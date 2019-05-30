@@ -3,72 +3,138 @@
   <head>
     <!--Required meta tags-->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Custom CSS-->
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="assets/images/favicon.jpg" type="image/x-icon">
     <title>LEV | AR</title>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand navbar-dark bg-custom fixed-top" id="mainNavbar">
+
+    <nav class="navbar navbar-expand navbar-dark bg-black fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="assets/images/lev-icon.png" alt="icone-lev" width=45% height=45%></a>
-        <ul class="navbar-nav mx-auto nav-fill w-100">
+        <a class="navbar-brand" href="#"><img src="assets/images/lev-icon.png" alt="icone-lev" width=45px id="brandLogo"></a>
+        <ul class="navbar-nav text-white nav-justified w-100">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Início</a>
+            <a class="nav-link" href="#inicio">Início</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Tutorial</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sobre</a>
+            <a class="nav-link" href="#sobre">Sobre</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <section class="container px-0 mt-5" id="#inicio">
-      <img src="assets/images/assinatura.png" class="img-fluid pr-5 mb-5" alt="LevAR Banner">
-      
-      <div class="row align-items-center">
-        <div class="col-12 text-center mb-5">
-            <h2>Selecione o modelo que deseja visualizar:</h2>
-        </div>
-      </div>
-      <div class="row align-items-center">
-        <div class="col-lg-6 text-center px-0 mb-5">
-          <div class="card bg-custom" style="width: auto;">
-            <img class="card-img-top" src="assets/images/card-relogio.png" alt="Thumb relógio de rua">
-            <div class="card-body">
-              <p class="card-text">Relógio de rua - JCDecaux</p>
-              <a href="jcdecaux.html" class="btn btn-lg btn-outline-primary btn-block">Ver em AR</a>
+    <!--Inicio-->
+    <div class="container" id="inicio">
+      <div class="row justify-content-center">
+        <div class="col-11 col-lg-10 mt-4">
+          <img src="assets/images/assinatura.png" class="img-fluid mb-5" alt="LevAR Banner">
+          <div class="row">
+            <div class="col-12 px-0 mb-4 text-center">
+              <h4>Visualize os mockups em Realidade Aumentada</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 px-0 mb-3">
+              <p><span>1. </span>Escolha o modelo que deseja visualizar. A câmera do seu dispositivo será aberta.</p>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-12 d-flex justify-content-between text-center px-0 mb-2">
+              <div class="card bg-black px-0 mr-1">
+                <a href="jcdecaux.html"><img class="card-img-top img-fluid" src="assets/images/card-relogio.jpg" alt="Thumb relógio de rua"></a>
+                <div class="card-body">
+                  <a href="jcdecaux.html" class="text-white">Relógio de rua</a>
+                </div>
+              </div>
+              <div class="card bg-black px-0 ml-1">
+                <a href="otima.html"><img class="card-img-top img-fluid" src="assets/images/card-ponto.jpg" alt="Thumb ponto de ônibus" width=250px></a>
+                <div class="card-body">
+                  <a href="otima.html" class="text-white">Ponto de ônibus</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 d-flex justify-content-between px-0 my-3">
+              <div class="col-6 px-0 pr-1">
+                  <p class="text-justify pr-1"><span>2. </span>Escaneie o marcador no book impresso. Caso você não tenha acesso, é possível imprimir o marcador ao lado ou escaneá-lo em outro dispositivo.</p>
+              </div>
+              <div class="col-6 px-0 pl-1">
+                  <a href="assets/markers/pattern-levar.png" target="_blank"><img src="assets/markers/pattern-levar.png" class="img-fluid" id="marker"></a>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!--Sobre-->
+          <div class="row px-0 mt-5" id="sobre">
+            <div class="col-12 px-0">
+              <h4>Sobre</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 px-0 mt-3">
+              <p class="text-justify">Essa página faz parte do Trabalho de Conclusão de Curso da turma 08G do curso de Publicidade e Propaganda da Universidade Presbiteriana Mackenzie.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 mt-2 px-0">
+              <h5>Grupo</h5>
+            </div>  
+          </div>
+          <div class="row my-3 justify-content-center">
+            <div class="col-sm-6 d-flex flex-column justify-content-center align-items-center">
+              <div class="col-6 px-0"><img src="assets/images/dani.jpg" class="img-fluid rounded-circle"></div>
+              <div class="px-0 text-center"><p class="mt-2 nome"><span>Daniele Joukhadar</span><br>Orientadora</p></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 d-flex flex-column justify-content-center align-items-center mb-3">
+              <div class="col-6 px-0"><img src="assets/images/bia.jpg" class="img-fluid rounded-circle"></div>
+              <div class="px-0 text-center"><p class="mt-2 nome"><span>Beatriz Tonndorf</span></p></div>
+            </div>
+            <div class="col-sm-6 d-flex flex-column justify-content-center align-items-center mb-3">
+              <div class="col-6 px-0"><img src="assets/images/fe.jpg" class="img-fluid rounded-circle"></div>
+              <div class="px-0 text-center"><p class="mt-2 nome"><span>Felipe Steflitsch</span></p></div>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-sm-6 d-flex flex-column justify-content-center align-items-center mb-3">
+              <div class="col-6 px-0"><img src="assets/images/mat.jpg" class="img-fluid rounded-circle"></div>
+              <div class="px-0 text-center"><p class="mt-2 nome"><span>Matheus Diório</span></p></div>
+            </div>
+            <div class="col-sm-6 d-flex flex-column justify-content-center align-items-center mb-3">
+              <div class="col-6 px-0"><img src="assets/images/renan.jpg" class="img-fluid rounded-circle"></div>
+              <div class="px-0 text-center"><p class="mt-2 nome"><span>Renan Iwamoto</span></p></div>
+            </div>
+          </div>
+          <hr>
+          <div class="row my-5">
+            <div class="col d-flex justify-content-center">
+              <p>2019</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 text-center px-0 mb-5">
-            <div class="card" style="width: auto;">
-                <img class="card-img-top" src="assets/images/card-ponto.png" alt="Thumb ponto de ônibus">
-                <div class="card-body">
-                  <p class="card-text">Ponto de ônibus - Otima</p>
-                  <a href="otima.html" class="btn btn-lg btn-outline-primary btn-block">Ver em AR</a>
-                </div>
-              </div>
-        </div>
       </div>
-    </section>
+    </div>
 
-    <section id="#tutorial">
-
-    </section>
-
-    <section id="#sobre">
-      
-    </section>
-
-    <!--Optional JavaScript-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-</html>
+      <!--Optional JavaScript-->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script>
+        $( '.navbar-dark .navbar-nav a' ).on( 'click', function () {
+          $( '.navbar-dark .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+          $( this ).parent( 'li' ).addClass( 'active' );
+          $("html, body").animate({
+            scrollTop: $( this.getAttribute('href') ).offset().top -73
+          }, 100);
+        });
+      </script>
+    </body>
+  </html>
