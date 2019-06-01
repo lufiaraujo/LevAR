@@ -8,7 +8,7 @@
 		<title>LevAR | Otima</title>
 	</head>
 	<body style='margin: 0px; overflow: hidden;'>
-    	<a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
+    	<a-scene embedded renderer='colorManagement: true;' arjs='sourceType: webcam; debugUIEnabled: false;'>
       
 			<a-assets>
 			    <a-asset-item id="ponto" src="assets/models/ponto.glb"></a-asset-item>
@@ -17,11 +17,11 @@
 			<a-marker markerhandler emitevents="true" cursor="rayOrigin: mouse" id="lev-marker" preset="custom" type="pattern" url="assets/markers/pattern-levar.patt">
 				<a-entity light="type: hemisphere; color: #fefddd; groundColor: #fefddd; intensity: 1.2" rotation="90 0 0"></a-entity>
 				<a-entity id="animated-model" position ="0 0.5 0">
-						<a-entity
+					<a-entity
 					    gltf-model="#ponto"
-						rotation="180 0 180"
-						position="0.80 -0.25 -0.10"
-			            scale="0.4 0.4 0.4">
+						rotation="110 0 180"
+						position="0.60 -0.25 0"
+			            scale="0.3 0.3 0.3">
 					</a-entity> 
 			    </a-entity>
 			</a-marker>
